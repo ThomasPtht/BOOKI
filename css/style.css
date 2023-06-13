@@ -6,8 +6,8 @@
     padding: 0;
     max-width: 1440px;
     
-    
 }
+
 
 :root {
     --main-color: #0065FC;
@@ -20,7 +20,7 @@
 }
 
 .menu {
-    margin: auto;
+    margin: 0 auto;
 }
 
 
@@ -43,6 +43,7 @@
     margin-bottom: 30px;
 }
 
+
 body {
     width: 100%;
     margin: 0 auto;
@@ -52,11 +53,11 @@ body {
     align-content: center;
    
     
-    
 }
 
 .main-container {
-    width: auto;
+    width: 100%;
+    max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
 }
@@ -100,7 +101,7 @@ nav {
 }
 
 
-.menu {
+header {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -109,14 +110,14 @@ nav {
 }   
 
 
-.links a{
+.nav a{
     margin-left: 30px;
     transition: 0,3s ease;
     color: black;
     
 }
 
-.links a:hover {
+.nav a:hover {
     border-top: 2px solid #0065FC;
     color: #0065FC;
     padding-top: 15px;
@@ -150,7 +151,7 @@ form {
 }
 
 
-.search-bar i {
+.search-bar .fa-location-dot {
     border: none;
     padding: 15px;
     border-top-left-radius: 20px;
@@ -536,16 +537,19 @@ footer ul {
     .filter {
         display: block;
        
-        
-        
+
     }
 
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    .hebergements-and-populaires section {
+        background-color:none;
+    }
+    
 
-    .menu {
+    header {
         
         display: flex;
         flex-direction: column;
@@ -555,64 +559,89 @@ footer ul {
     
     
 
-    .links a {
-        width: 150%;
+    nav a {
+        width: 100%;
         display: flex;
         flex-direction: row;
-        justify-content:center;
-        
+        justify-content: center;
+        border-bottom: 2px solid #F2F2F2;
         padding-bottom: 15px;
         
-        
-        
-    }
-
-    .links  {
-        width: 120%;
-        display: flex; 
-        border-bottom: 2px solid #F2F2F2;
        
+        
+        
     }
 
-    .links a:hover {
+    header {
+        margin: 0 -80px ;
+    }
+
+
+    nav  {
+        width: 100%; 
+        display: flex;
+        
+    }
+
+   
+
+    nav a:hover {
         border-bottom: 2px solid #0065FC;
         border-top: none;
         padding-top:0;
-        padding-bottom: 20px;
         
 
     }
      
+
     
     .main-introduction {
-        padding-top: 25px;
-        font-size: 1.3em;
-    }
-
-
-    .search-bar button {
-        border-radius: 20px;
+        padding-top: 30px;
         
     }
 
+    .main-introduction h1 {
+        font-size: 1.4em;
+    }
+
+
+
+
+    .search-bar .fa-location-dot {
+        padding: 15px;
+        
+    }
 
     .magnifying-glass {
         display:initial;
-        border-radius: 15px;
-        background-color: #0065FC;
-        color: white;
+        margin: -5px;
+        
     }
 
+    .fa-magnifying-glass {
+        padding: 15px;
+        border-radius: 15px;
+        color: white;
+        background-color: #0065FC;
+        
+        
+    }
+
+    .search-bar {
+        padding-right: 40px;
+    }
     
     .search-bar input {
         padding-right: 120px;
-        padding: 20px 120px 20px 0;
+        padding: 14px 60px 14px 20px;
     }
+
 
     .search-button button  {
         display: none;
-        
-
+        margin-right: -2px;
+    }
+    
 
     
     .filter {
@@ -625,17 +654,24 @@ footer ul {
         height: 50px;
     }
 
-
-  
+    .infobar {
+        margin-bottom: 5px;
     }
+    
 
     .hebergements-and-populaires {
+        width: 100%;
         display: flex;
         flex-direction: column-reverse;
         
         
     }
 
+    .populaires{
+        width: 100%;
+        background-color: #d9d9d9;
+        
+    }
 
     .populaires-cards {
         display: flex;
@@ -653,12 +689,14 @@ footer ul {
 
     .hebergements-cards .card {
         width: 90%;
+        height: 240px;
         margin-right: 0;
 
     }
 
     .hebergements-cards img {
         width: 100%;
+        height: 150px;
         
     }
 
@@ -666,7 +704,6 @@ footer ul {
     .hebergement h2 {
         width: 80%;
     }
-
 
 
     .activities-cards {
@@ -696,4 +733,4 @@ footer ul {
         padding-left: 25px;
     }
     
-    }
+}
