@@ -110,14 +110,14 @@ header {
 }   
 
 
-.nav a{
+nav a {
     margin-left: 30px;
     transition: 0,3s ease;
     color: black;
     
 }
 
-.nav a:hover {
+nav a:hover {
     border-top: 2px solid #0065FC;
     color: #0065FC;
     padding-top: 15px;
