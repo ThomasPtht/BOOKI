@@ -571,6 +571,10 @@ footer ul {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+
+    .logo {
+        display: flex;
+    }
     
     header {
         width: 100%;
@@ -589,7 +593,7 @@ footer ul {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        border-bottom: 2px solid #F2F2F2;
+        
         padding-bottom: 15px;
     
     }
@@ -597,20 +601,22 @@ footer ul {
     
 
     nav  {
-        width: 90%; 
+        width: 100%; 
         display: flex;
-
+        margin-left: 0;
        
-        
     }
 
-   
+    nav a {
+        margin-left: 0;
+        border-bottom: 2px solid #F2F2F2;
+    }
+
 
     nav a:hover {
         border-bottom: 2px solid #0065FC;
         border-top: none;
-        padding-top:0;
-        
+        padding-top: 0;
 
     }
      
@@ -676,6 +682,7 @@ footer ul {
     }
 
     .filter-buttons {
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         
@@ -683,7 +690,7 @@ footer ul {
     }
 
     .filter-buttons button {
-        width: 200px;
+        width: 230px;
     }
 
 
@@ -718,7 +725,7 @@ footer ul {
 
 
     .populaires-cards {
-        width: 80%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-content:  center;
@@ -728,7 +735,7 @@ footer ul {
     }
 
     .populaires-cards .card {
-        width: 70%;
+        width: 90%;
         margin-right: 0;
         padding-right: 40px;
     }
@@ -762,8 +769,13 @@ footer ul {
     }
 
 
+    #activities-title {
+        
+    }
+
+
     .activities-cards {
-        width: 90%;
+        width: 95%;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
