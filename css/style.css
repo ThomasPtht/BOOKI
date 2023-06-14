@@ -192,14 +192,13 @@ form {
 }
     
 
-
-
 .filter h2 {
     margin-right: 10px;
 }
 
 .filter {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin: 40px 0;
 }
@@ -574,10 +573,10 @@ footer ul {
 @media (max-width: 767.98px) {
     
     header {
+        width: 100%;
         display: flex;
         flex-direction: column;
-        padding-left: 0px;
-        padding-right: 0;
+        
         
     }
 
@@ -598,10 +597,9 @@ footer ul {
     
 
     nav  {
-        width: 100%; 
+        width: 90%; 
         display: flex;
-        padding-left: 0;
-        padding-right: 0;
+
        
         
     }
@@ -672,15 +670,22 @@ footer ul {
 
     
     .filter {
-        width: 400px;
-        padding: 0 30px;
-       display: block; 
+        width: 90%;
+        display: block;
+        margin-left: 20px;
     }
 
-    .filter button {
-        width: 170px;
-        height: 50px;
+    .filter-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        
+        
     }
+
+    .filter-buttons button {
+        width: 200px;
+    }
+
 
     .infobar {
         margin-bottom: 5px;
@@ -704,7 +709,7 @@ footer ul {
     }
 
     .populaires {
-        width:calc(100% + 90px);
+        width:100%
         padding-right: 40px;
         
         
@@ -728,10 +733,14 @@ footer ul {
         padding-right: 40px;
     }
 
-    .populaires-cards .card-content
+    .
 
     .hebergements {
         margin-top: 50px;
+    }
+
+    .hebergements-cards {
+        width: 100%;
     }
 
     .hebergements-cards .card {
@@ -752,12 +761,10 @@ footer ul {
         width: 80%;
     }
 
-    .activities {
-        padding: 30px;
-    }
 
     .activities-cards {
         width: 90%;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -769,6 +776,10 @@ footer ul {
     }
 
     .activities-cards img {
+        width: 100%;
+    }
+
+    footer {
         width: 100%;
     }
 
