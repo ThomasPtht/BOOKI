@@ -443,23 +443,21 @@ footer {
     width: 100%;
     background: #F2F2F2;
     display: flex;
-    justify-content: center;
-    align-items: center;  
+   
 }
 
 .footer-blocs {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     max-width: 1440px;
-    padding-left: 35px;
+    margin-right: 90px;
 }
 
 .footer-bloc {
     padding-top: 30px;
-    padding-bottom: 20px;
-    padding-right: 10px;
-    margin-right: 0px;
+    padding-bottom: 10px;
+    padding-right: 50px;
     display: flex;
     flex-direction: column;
   }
@@ -473,12 +471,14 @@ footer h3 {
 
 footer li {
     padding-bottom: 15px;
+    padding-right: 5px;
     
    
 }
 
 footer ul {
     padding-right: 130px;
+    padding-right: 5px;
 }
 
 
@@ -549,7 +549,7 @@ footer ul {
 
     .filter button {
         margin-top: 20px;
-        padding: 5px 10px;
+        padding: 5px 5px;
         text-align: center;
     }
 
@@ -657,6 +657,7 @@ footer ul {
     }
 
     .search-bar {
+        width: 80%;
         padding-right: 40px;
         padding-left: 30px;
 
@@ -685,12 +686,15 @@ footer ul {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+       
         
         
     }
 
     .filter-buttons button {
-        width: 230px;
+        width: 40%;
+        font-size: 0.9em;
     }
 
 
@@ -769,9 +773,7 @@ footer ul {
     }
 
 
-    #activities-title {
-        
-    }
+
 
 
     .activities-cards {
@@ -780,6 +782,7 @@ footer ul {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-bottom: 40px;
     }
 
     .activities-cards .card {
