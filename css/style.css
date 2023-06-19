@@ -86,17 +86,21 @@ a {
   text-decoration: none;
 }
 
-nav {
-  align-items: center;
-  margin-left: 30px;
-}
-
 header {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
+
+
+nav {
+  align-items: center;
+  margin-left: 30px;
+  padding-bottom: 51px;
+  
+}
+
 
 nav a {
   margin-left: 30px;
@@ -131,6 +135,7 @@ form {
   align-items: center;
 }
 
+/*** Barre de recherche ***/
 .search-bar .fa-location-dot {
   border: none;
   padding: 15px;
@@ -169,6 +174,7 @@ form {
   display: none;
 }
 
+/*** Filtres ***/
 .filter h2 {
   margin-right: 10px;
 }
@@ -476,7 +482,7 @@ footer ul {
 
   .filter button {
     margin-top: 20px;
-    padding: 5px 5px;
+    padding: 5px 10px;
     text-align: center;
   }
 
@@ -504,16 +510,18 @@ footer ul {
     flex-direction: column;
   }
 
+
+  /****** Menu responsive mobile ******/
   nav a {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
     padding-bottom: 15px;
   }
 
+  
   nav {
     width: 100%;
     display: flex;
@@ -543,6 +551,7 @@ footer ul {
     font-size: 1.4em;
   }
 
+  /* Barre de recherche */
   .search-bar .fa-location-dot {
     padding: 15px;
   }
@@ -574,6 +583,8 @@ footer ul {
     display: none;
     margin-right: -2px;
   }
+
+  /*** Filtres ***/
 
   .filter {
     width: 90%;
