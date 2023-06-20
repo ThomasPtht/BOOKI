@@ -39,6 +39,7 @@
 }
 
 body {
+  min-width: 320px;
   width: 100%;
   margin: 0 auto;
   min-height: 100vh;
@@ -387,20 +388,27 @@ footer {
   width: 100%;
   background: #f2f2f2;
   display: flex;
+  justify-content: flex-start;
+  
+  
+  
+  
 }
 
 .footer-blocs {
-  display: flex;
-  justify-content: space-around;
   width: 100%;
-  max-width: 1440px;
-  margin-right: 90px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 200px;
+ 
+
 }
 
 .footer-bloc {
   padding-top: 30px;
   padding-bottom: 10px;
-  padding-right: 50px;
+
   display: flex;
   flex-direction: column;
 }
@@ -414,10 +422,7 @@ footer li {
   padding-right: 5px;
 }
 
-footer ul {
-  padding-right: 130px;
-  padding-right: 5px;
-}
+
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
@@ -482,7 +487,7 @@ footer ul {
 
   .filter button {
     margin-top: 20px;
-    padding: 5px 10px;
+    padding: 5px 8px;
     text-align: center;
   }
 
@@ -490,11 +495,12 @@ footer ul {
     display: block;
   }
 
+
   .footer-blocs {
     display: flex;
-    flex-direction: row;
     align-content: center;
-    padding: 15px;
+    justify-content: space-between;
+    padding-right: 137px;
   }
 }
 
@@ -526,6 +532,7 @@ footer ul {
     width: 100%;
     display: flex;
     margin-left: 0;
+    padding-bottom: 0;
   }
 
   nav a {
@@ -539,44 +546,68 @@ footer ul {
     padding-top: 0;
   }
 
+  main h2 {
+    font-size: 1.2em;
+  }
+  
+  .section-title {
+    font-size: 1.1em;
+    
+  }
+  
   .main-container {
     padding: 0;
   }
 
   .main-introduction {
-    padding: 30px;
+    padding: 0 27px;
+    
   }
 
   .main-introduction h1 {
-    font-size: 1.4em;
+    font-size: 1.2em;
+    padding-top: 20px;
+    padding-bottom: 5px;
   }
 
+  .main-introduction p {
+    font-size: 0.9em;
+    
+  }
+
+
   /* Barre de recherche */
+
+  form {
+    padding-left: 14px;
+    
+  }
+
+  .search-bar {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
   .search-bar .fa-location-dot {
     padding: 15px;
   }
 
   .magnifying-glass {
     display: initial;
-    margin: -5px;
+    margin: -8px;
   }
 
   .fa-magnifying-glass {
-    padding: 15px;
+    padding: 15px 15px 15px 15px;
     border-radius: 15px;
     color: white;
     background-color: #0065fc;
   }
 
-  .search-bar {
-    width: 80%;
-    padding-right: 40px;
-    padding-left: 30px;
-  }
 
   .search-bar input {
     padding-right: 120px;
-    padding: 14px 60px 14px 20px;
+    padding: 14px 9px 14px 14px;
   }
 
   .search-button button {
@@ -587,9 +618,12 @@ footer ul {
   /*** Filtres ***/
 
   .filter {
-    width: 90%;
+    width: 100%;
     display: block;
-    margin-left: 20px;
+  }
+
+  .filter h2 {
+    padding-left: 24px;
   }
 
   .filter-buttons {
@@ -597,18 +631,31 @@ footer ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
+    
+    
   }
 
   .filter-buttons button {
     width: 40%;
-    font-size: 0.9em;
+    font-size: 0.8em;
+ 
+   
   }
 
   .infobar {
+    font-size: 0.9em;
     margin-bottom: 5px;
-    padding-left: 30px;
+    padding-left: 18px;
+    padding-right: 3px;
   }
 
+
+  
+  .infobar i {
+    height: 20px;
+   
+  }
   section.hebergements {
     background-color: white;
   }
@@ -666,7 +713,7 @@ footer ul {
   }
 
   #activities-title {
-    padding-left: 50px;
+    padding-left: 27px;
     padding-bottom: 20px;
   }
 
@@ -689,12 +736,13 @@ footer ul {
 
   footer {
     width: 100%;
+    font-size: 1em;
   }
 
   .footer-blocs {
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin: auto;
+    padding-right: 100px;
   }
 }
