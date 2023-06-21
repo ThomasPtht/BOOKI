@@ -585,7 +585,7 @@ footer li {
 
   .search-bar {
     margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 5px;
   }
 
   .search-bar .fa-location-dot {
@@ -644,16 +644,23 @@ footer li {
   }
 
   .infobar {
-    font-size: 0.9em;
     margin-bottom: 5px;
-    padding-left: 18px;
+    padding-left: 16px;
     padding-right: 5px;
+    gap:3px;
+  }
+
+  .infobar p {
+    padding-left: 5px;
+    font-size: 0.9em;
   }
 
 
   
   .infobar i {
+    font-size: small;
     height: 20px;
+
    
   }
   section.hebergements {
@@ -715,6 +722,10 @@ footer li {
   #activities-title {
     padding-left: 27px;
     padding-bottom: 20px;
+  }
+
+  .activities {
+    width: 97%;
   }
 
   .activities-cards {
